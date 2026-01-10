@@ -1,0 +1,92 @@
+group_id,group_title,step_no,base_en,base_ja,instruction,answer_en
+A1_U01,Keep SVO while replacing elements,1,I open the file.,ファイルを開きます。,Change the subject to we.,We open the file.
+A1_U01,Keep SVO while replacing elements,2,We open the file.,ファイルを開きます。,Change the object to the document.,We open the document.
+A1_U01,Keep SVO while replacing elements,3,We open the document.,ドキュメントを開きます。,Change the verb to review.,We review the document.
+A1_U01,Keep SVO while replacing elements,4,We review the document.,ドキュメントを確認します。,Change the subject to he.,He reviews the document.
+A1_U01,Keep SVO while replacing elements,5,He reviews the document.,彼はドキュメントを確認します。,Add the adverb carefully.,He reviews the document carefully.
+A1_U01,Keep SVO while replacing elements,6,He reviews the document carefully.,彼は注意深く確認します。,Change the object to the plan.,He reviews the plan carefully.
+A1_U02,Switch be statements positive and negative,1,I am ready.,準備ができています。,Change the subject to we.,We are ready.
+A1_U02,Switch be statements positive and negative,2,We are ready.,準備ができています。,Make it negative.,We are not ready.
+A1_U02,Switch be statements positive and negative,3,We are not ready.,準備ができていません。,Change the subject to the team.,The team is not ready.
+A1_U02,Switch be statements positive and negative,4,The team is not ready.,チームは準備ができていません。,Make it positive.,The team is ready.
+A1_U02,Switch be statements positive and negative,5,The team is ready.,チームは準備ができています。,Add the time phrase now.,The team is ready now.
+A1_U03,Expand be statements with extra information,1,I am at the office.,オフィスにいます。,Change the subject to we.,We are at the office.
+A1_U03,Expand be statements with extra information,2,We are at the office.,オフィスにいます。,Add the time phrase now.,We are at the office now.
+A1_U03,Expand be statements with extra information,3,We are at the office now.,今オフィスにいます。,Change the place to the hotel.,We are at the hotel now.
+A1_U03,Expand be statements with extra information,4,We are at the hotel now.,今ホテルにいます。,Add the purpose for a meeting.,We are at the hotel now for a meeting.
+A1_U03,Expand be statements with extra information,5,We are at the hotel now for a meeting.,会議のため今ホテルにいます。,Change the subject to they.,They are at the hotel now for a meeting.
+A1_U03,Expand be statements with extra information,6,They are at the hotel now for a meeting.,彼らは会議のため今ホテルにいます。,Make it negative.,They are not at the hotel now for a meeting.
+A1_U04,Slide present statements to the past,1,I check the schedule.,スケジュールを確認します。,Change to the past.,I checked the schedule.
+A1_U04,Slide present statements to the past,2,I checked the schedule.,スケジュールを確認しました。,Change the subject to we.,We checked the schedule.
+A1_U04,Slide present statements to the past,3,We checked the schedule.,私たちはスケジュールを確認しました。,Change the object to the plan.,We checked the plan.
+A1_U04,Slide present statements to the past,4,We checked the plan.,私たちは計画を確認しました。,Change the verb to review.,We reviewed the plan.
+A1_U04,Slide present statements to the past,5,We reviewed the plan.,私たちは計画をレビューしました。,Change the subject to he.,He reviewed the plan.
+A1_U04,Slide present statements to the past,6,He reviewed the plan.,彼は計画をレビューしました。,Add the time phrase yesterday.,He reviewed the plan yesterday.
+A1_U04,Slide present statements to the past,7,He reviewed the plan yesterday.,彼は昨日計画をレビューしました。,Make it negative.,He did not review the plan yesterday.
+A1_U05,Build stable negative sentences,1,We use this system.,このシステムを使います。,Make it negative.,We do not use this system.
+A1_U05,Build stable negative sentences,2,We do not use this system.,このシステムを使いません。,Change the subject to he.,He does not use this system.
+A1_U05,Build stable negative sentences,3,He does not use this system.,彼はこのシステムを使いません。,Change the object to the tool.,He does not use the tool.
+A1_U05,Build stable negative sentences,4,He does not use the tool.,彼はそのツールを使いません。,Change to the past.,He did not use the tool.
+A1_U05,Build stable negative sentences,5,He did not use the tool.,彼はそのツールを使いませんでした。,Change the subject to they.,They did not use the tool.
+A1_U05,Build stable negative sentences,6,They did not use the tool.,彼らはそのツールを使いませんでした。,Add the reason for security reasons.,They did not use the tool for security reasons.
+A1_U06,Turn statements into yes-no questions,1,You finished the task.,タスクを完了しました。,Make it a yes-no question.,Did you finish the task?
+A1_U06,Turn statements into yes-no questions,2,Did you finish the task?,タスクを完了しましたか？,Change the subject to he.,Did he finish the task?
+A1_U06,Turn statements into yes-no questions,3,Did he finish the task?,彼はタスクを完了しましたか？,Change the object to the report.,Did he finish the report?
+A1_U06,Turn statements into yes-no questions,4,Did he finish the report?,彼はレポートを完了しましたか？,Change the verb to submit.,Did he submit the report?
+A1_U06,Turn statements into yes-no questions,5,Did he submit the report?,彼はレポートを提出しましたか？,Add the time phrase this morning.,Did he submit the report this morning?
+A1_U06,Turn statements into yes-no questions,6,Did he submit the report this morning?,彼は今朝レポートを提出しましたか？,Answer briefly.,Yes, he did.
+A1_U07,Extract information with Wh-questions,1,We start the meeting at ten.,会議は10時に始まります。,Ask about the time.,When do we start the meeting?
+A1_U07,Extract information with Wh-questions,2,When do we start the meeting?,いつ会議を始めますか？,Change the subject to they.,When do they start the meeting?
+A1_U07,Extract information with Wh-questions,3,When do they start the meeting?,彼らはいつ会議を始めますか？,Change the verb to finish.,When do they finish the meeting?
+A1_U07,Extract information with Wh-questions,4,When do they finish the meeting?,彼らはいつ会議を終えますか？,Change the Wh-word to where.,Where do they finish the meeting?
+A1_U07,Extract information with Wh-questions,5,Where do they finish the meeting?,彼らはどこで会議を終えますか？,Change the subject to he.,Where does he finish the meeting?
+A1_U07,Extract information with Wh-questions,6,Where does he finish the meeting?,彼はどこで会議を終えますか？,Change the verb to work.,Where does he work?
+A1_U07,Extract information with Wh-questions,7,Where does he work?,彼はどこで働いていますか？,Answer briefly.,At the office.
+A1_U08,Insert can and will naturally,1,I join the meeting.,会議に参加します。,Change to can.,I can join the meeting.
+A1_U08,Insert can and will naturally,2,I can join the meeting.,会議に参加できます。,Change the subject to we.,We can join the meeting.
+A1_U08,Insert can and will naturally,3,We can join the meeting.,私たちは参加できます。,Change to negative.,We cannot join the meeting.
+A1_U08,Insert can and will naturally,4,We cannot join the meeting.,私たちは参加できません。,Change to will.,We will not join the meeting.
+A1_U08,Insert can and will naturally,5,We will not join the meeting.,私たちは参加しません。,Change the subject to I.,I will not join the meeting.
+A1_U08,Insert can and will naturally,6,I will not join the meeting.,私は参加しません。,Add the reason today.,I will not join the meeting today.
+A1_U09,Control sentences with adverbs,1,We review the report.,レポートを確認します。,Add a time phrase today.,We review the report today.
+A1_U09,Control sentences with adverbs,2,We review the report today.,今日レポートを確認します。,Change the subject to he.,He reviews the report today.
+A1_U09,Control sentences with adverbs,3,He reviews the report today.,彼は今日レポートを確認します。,Change the verb to submit.,He submits the report today.
+A1_U09,Control sentences with adverbs,4,He submits the report today.,彼は今日レポートを提出します。,Add an adverb quickly.,He submits the report today quickly.
+A1_U09,Control sentences with adverbs,5,He submits the report today quickly.,彼は今日すぐにレポートを提出します。,Change to the past.,He submitted the report today quickly.
+A1_U09,Control sentences with adverbs,6,He submitted the report today quickly.,彼は今日すぐにレポートを提出しました。,Change the subject to they.,They submitted the report today quickly.
+A1_U10,Add information with prepositional phrases,1,We meet.,会います。,Add the place at the office.,We meet at the office.
+A1_U10,Add information with prepositional phrases,2,We meet at the office.,オフィスで会います。,Change the subject to they.,They meet at the office.
+A1_U10,Add information with prepositional phrases,3,They meet at the office.,彼らはオフィスで会います。,Add the time on Monday.,They meet at the office on Monday.
+A1_U10,Add information with prepositional phrases,4,They meet at the office on Monday.,彼らは月曜にオフィスで会います。,Change the verb to work.,They work at the office on Monday.
+A1_U10,Add information with prepositional phrases,5,They work at the office on Monday.,彼らは月曜にオフィスで働きます。,Add the purpose for a project.,They work at the office on Monday for a project.
+A1_U10,Add information with prepositional phrases,6,They work at the office on Monday for a project.,彼らはプロジェクトのため月曜にオフィスで働きます。,Change the subject to we.,We work at the office on Monday for a project.
+A1_U11,Turn statements into requests,1,You send the file.,ファイルを送ります。,Make it a request.,Can you send the file?
+A1_U11,Turn statements into requests,2,Can you send the file?,ファイルを送ってもらえますか？,Change the object to the document.,Can you send the document?
+A1_U11,Turn statements into requests,3,Can you send the document?,ドキュメントを送ってもらえますか？,Add the time today.,Can you send the document today?
+A1_U11,Turn statements into requests,4,Can you send the document today?,今日ドキュメントを送ってもらえますか？,Change the subject to we.,Can we send the document today?
+A1_U11,Turn statements into requests,5,Can we send the document today?,今日ドキュメントを送れますか？,Change the verb to review.,Can we review the document today?
+A1_U12,Rephrase sentences smoothly,1,We finish the task.,タスクを完了します。,Make it negative.,We do not finish the task.
+A1_U12,Rephrase sentences smoothly,2,We do not finish the task.,タスクを完了しません。,Make it a question.,Do we finish the task?
+A1_U12,Rephrase sentences smoothly,3,Do we finish the task?,タスクを完了しますか？,Answer briefly.,Yes, we do.
+A1_U12,Rephrase sentences smoothly,4,Yes, we do.,はい、完了します。,Change the subject to he.,Yes, he does.
+A1_U12,Rephrase sentences smoothly,5,Yes, he does.,はい、彼は完了します。,Make it negative.,He does not finish the task.
+A1_U12,Rephrase sentences smoothly,6,He does not finish the task.,彼はタスクを完了しません。,Make it a question.,Does he finish the task?
+A1_U12,Rephrase sentences smoothly,7,Does he finish the task?,彼はタスクを完了しますか？,Answer briefly.,No, he does not.
+A2_U13,Ask for clarification and confirmation,1,I did not catch that.,聞き取れませんでした。,Ask politely.,Sorry?
+A2_U13,Ask for clarification and confirmation,2,Sorry?,すみません？,Ask to repeat.,Could you say that again?
+A2_U13,Ask for clarification and confirmation,3,Could you say that again?,もう一度言ってもらえますか？,Ask to speak slowly.,Could you say that more slowly?
+A2_U13,Ask for clarification and confirmation,4,Could you say that more slowly?,もう少しゆっくり言ってもらえますか？,Ask for meaning.,What do you mean?
+A2_U13,Ask for clarification and confirmation,5,What do you mean?,どういう意味ですか？,Confirm understanding.,Do you mean the schedule?
+A2_U13,Ask for clarification and confirmation,6,Do you mean the schedule?,スケジュールのことですか？,Answer briefly.,Yes, that’s right.
+A2_U14,Add softening and uncertainty,1,This is correct.,これは正しいです。,Soften the statement.,I think this is correct.
+A2_U14,Add softening and uncertainty,2,I think this is correct.,正しいと思います。,Add uncertainty.,I think this is probably correct.
+A2_U14,Add softening and uncertainty,3,I think this is probably correct.,おそらく正しいと思います。,Change the subject to we.,We think this is probably correct.
+A2_U14,Add softening and uncertainty,4,We think this is probably correct.,私たちはおそらく正しいと思います。,Add a hesitation phrase.,We’re not sure, but we think this is correct.
+A2_U14,Add softening and uncertainty,5,We’re not sure, but we think this is correct.,確信はありませんが正しいと思います。,Change the object to the plan.,We’re not sure, but we think the plan is correct.
+A2_U14,Add softening and uncertainty,6,We’re not sure, but we think the plan is correct.,計画は正しいと思います。,Shorten naturally.,I’m not sure, but the plan looks correct.
+A2_U15,Pass the conversation back,1,I think this works.,これはうまくいくと思います。,Ask for the other person’s opinion.,How about you?
+A2_U15,Pass the conversation back,2,How about you?,あなたはどうですか？,Ask directly.,What do you think?
+A2_U15,Pass the conversation back,3,What do you think?,どう思いますか？,Ask for agreement.,Is that OK?
+A2_U15,Pass the conversation back,4,Is that OK?,それで大丈夫ですか？,Change the subject to we.,Are we OK with that?
+A2_U15,Pass the conversation back,5,Are we OK with that?,それで問題ないですか？,Close politely.,Does that work for you?
+

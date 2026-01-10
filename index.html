@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>English Hanon MVP</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="manifest.json">
+    <link rel="apple-touch-icon" href="icon-192.png">
+    <meta name="theme-color" content="#2563eb">
+</head>
+
+<body>
+    <div id="app" class="container">
+        <header>
+            <div class="header-left">
+                <h1>English Hanon</h1>
+                <button id="btn-session-list" class="btn-text">Select Session ▾</button>
+            </div>
+            <div class="header-stats">
+                <div class="stats">Completed: <span id="total-sessions">0</span></div>
+                <div class="stats">Session: <span id="current-session-display">-- / --</span></div>
+            </div>
+        </header>
+
+        <div id="session-modal" class="modal hidden">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2>Select Session</h2>
+                    <button id="btn-close-modal" class="btn-close">×</button>
+                </div>
+                <div id="session-list" class="session-list">
+                    <!-- Session items will be injected here -->
+                </div>
+            </div>
+        </div>
+
+        <main>
+            <div id="card" class="card">
+                <div class="section base">
+                    <p class="label">Original</p>
+                    <p id="base-en" class="text-en">Loading...</p>
+                    <p id="base-ja" class="text-ja">...</p>
+                </div>
+
+                <div class="divider"></div>
+
+                <div class="section instruction">
+                    <p class="label">Instruction</p>
+                    <p id="instruction" class="text-instruction">...</p>
+                </div>
+
+                <div class="divider"></div>
+
+                <div class="section answer">
+                    <p class="label">Answer</p>
+                    <div id="answer-box" class="answer-box hidden">
+                        <p id="answer-en" class="text-en">...</p>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <button id="btn-show-answer" class="btn secondary">Show Answer</button>
+            <button id="btn-next" class="btn primary">Next</button>
+            <div id="loading-message" class="hidden">Loading questions...</div>
+        </footer>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
