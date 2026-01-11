@@ -132,6 +132,43 @@ div {
     font-weight: 600;
 }
 
+.section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.btn-icon {
+    background: transparent;
+    border: none;
+    color: var(--primary-color);
+    cursor: pointer;
+    /* Mobile friendly touch target */
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.2s;
+}
+
+.btn-icon svg {
+    width: 28px;
+    height: 28px;
+    fill: currentColor;
+}
+
+.btn-icon:hover {
+    background-color: #eff6ff;
+    /* Light blue background on hover */
+}
+
+.btn-icon:active {
+    background-color: #dbeafe;
+    transform: scale(0.95);
+}
+
 .text-en {
     font-size: 1.5rem;
     line-height: 1.4;

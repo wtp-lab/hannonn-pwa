@@ -11,6 +11,8 @@ let state = {
 
 // --- Audio ---
 const audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+const synth = window.speechSynthesis;
+let currentVoice = null;
 
 const sounds = {
     // Gentle ping for showing answer
@@ -48,8 +50,40 @@ const sounds = {
 
         osc.start();
         osc.stop(audioCtx.currentTime + 0.1);
+    },
+    // TTS
+    speak: (text) => {
+        // Cancel current speech to prevent overlapping
+        if (synth.speaking) {
+            synth.cancel();
+        }
+
+        const utterance = new SpeechSynthesisUtterance(text);
+        utterance.lang = 'en-US';
+
+        // Try to select a good voice (Pixel/Android usually has "English (United States)")
+        if (!currentVoice) {
+            const voices = synth.getVoices();
+            // Prioritize Google voices or en-US
+            currentVoice = voices.find(v => v.name.includes('Google US English')) ||
+                voices.find(v => v.lang === 'en-US');
+        }
+        if (currentVoice) {
+            utterance.voice = currentVoice;
+        }
+
+        synth.speak(utterance);
     }
 };
+
+// Initialize voices (often loaded asynchronously)
+if (speechSynthesis.onvoiceschanged !== undefined) {
+    speechSynthesis.onvoiceschanged = () => {
+        const voices = synth.getVoices();
+        currentVoice = voices.find(v => v.name.includes('Google US English')) ||
+            voices.find(v => v.lang === 'en-US');
+    };
+}
 
 let questions = []; // Raw CSV data parsed
 let currentGroupQuestions = []; // Filtered for current group
@@ -57,10 +91,12 @@ let currentGroupQuestions = []; // Filtered for current group
 // --- DOM Layout ---
 const ui = {
     baseEn: document.getElementById('base-en'),
+    btnPlayBase: document.getElementById('btn-play-base'), // Add play button
     baseJa: document.getElementById('base-ja'),
     instruction: document.getElementById('instruction'),
     answerBox: document.getElementById('answer-box'),
     answerEn: document.getElementById('answer-en'),
+    btnPlayAnswer: document.getElementById('btn-play-answer'), // Add play button
     totalSessions: document.getElementById('total-sessions'),
     btnShow: document.getElementById('btn-show-answer'),
     btnNext: document.getElementById('btn-next'),
@@ -217,6 +253,9 @@ function toggleAnswer() {
     if (box.classList.contains('hidden')) {
         box.classList.remove('hidden');
         state.hasSeenCurrentAnswer = true;
+
+        const q = getCurrentQuestion();
+        if (q) sounds.speak(q.answer_en); // Auto read answer
     }
 }
 
@@ -270,6 +309,13 @@ function selectSession(groupId) {
 function render() {
     const q = getCurrentQuestion();
 
+    // Auto read base sentence if new step.
+    // We check if answerBox is hidden to infer it's a new or reset step.
+    if (q && ui.answerBox.classList.contains('hidden')) {
+        // Small delay for UI stability
+        setTimeout(() => sounds.speak(q.base_en), 200);
+    }
+
     ui.totalSessions.textContent = state.totalSessions;
 
     const groups = getUniqueGroups();
@@ -303,6 +349,23 @@ function render() {
 function setupEventListeners() {
     ui.btnShow.addEventListener('click', toggleAnswer);
     ui.btnNext.addEventListener('click', handleNext);
+
+    // Audio Buttons
+    if (ui.btnPlayBase) {
+        ui.btnPlayBase.addEventListener('click', (e) => {
+            e.stopPropagation();
+            const q = getCurrentQuestion();
+            if (q) sounds.speak(q.base_en);
+        });
+    }
+
+    if (ui.btnPlayAnswer) {
+        ui.btnPlayAnswer.addEventListener('click', (e) => {
+            e.stopPropagation();
+            const q = getCurrentQuestion();
+            if (q) sounds.speak(q.answer_en);
+        });
+    }
 
     if (ui.btnOneSessionList) {
         ui.btnOneSessionList.addEventListener('click', openSessionModal);
